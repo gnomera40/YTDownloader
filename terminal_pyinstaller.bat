@@ -1,0 +1,14 @@
+pyinstaller --onefile ^
+--add-data "avcodec-59.dll;." ^
+--add-data "avdevice-59.dll;." ^
+--add-data "avfilter-8.dll;." ^
+--add-data "avformat-59.dll;." ^
+--add-data "avutil-57.dll;." ^
+--add-data "ffmpeg.exe;." ^
+--add-data "ffplay.exe;." ^
+--add-data "ffprobe.exe;." ^
+--add-data "postproc-56.dll;." ^
+--add-data "swresample-4.dll;." ^
+--add-data "swscale-6.dll;." ^
+--add-data "logo.ico;." ^
+--noconsole --icon="logo.ico" main.py
